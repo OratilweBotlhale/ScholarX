@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ScholarX</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Images/ScholarX Logo.png" alt="ScholarX Logo" class="logo-icon">
+            </div>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="apply-btn"><a href="apply.html">Apply Now</a></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+                <p>Have questions about ScholarX? We're here to help. Reach out to us and we'll respond as soon as possible.</p>
+            </div>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-card">
+                <div class="icon email-icon">
+                    <img src="https://img.icons8.com/?size=100&id=qyRpAggnV0zH&format=png&color=000000" alt="Email Icon" class="icon-img">
+                </div>
+                <h3>Email Us</h3>
+                <p>info@scholarx.com</p>
+                <p>support@scholarx.com</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon phone-icon">
+                    <img src="https://img.icons8.com/?size=100&id=I24lanX6Nq71&format=png&color=000000" alt="Email Icon" class="icon-img">
+                </div>
+                <h3>Call Us</h3>
+                <p>+1 (555) 123-4567</p>
+                <p>Mon-Fri, 9AM-5PM EST</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon location-icon">
+                    <img src="https://img.icons8.com/?size=100&id=PZTTDl8ML4vy&format=png&color=000000" alt="Email Icon" class="icon-img">
+                </div>
+                <h3>Visit Us</h3>
+                <p>123 Education Lane</p>
+                <p>City, Country 12345</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <form action="send_email.php" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Enter the subject of your message..." rows="2" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn"> Send Message</button>
+                </form>
+            </div>
+
+            <div class="office-hours">
+                <h3>Office Hours</h3>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <h4>Monday - Friday</h4>
+                        <p>9:00 AM - 5:00 PM EST</p>
+                    </div>
+                    <div class="hours-item">
+                        <h4>Weekend</h4>
+                        <p>Closed</p>
+                    </div>
+                </div>
+                <p class="urgent-note">For urgent inquiries, please call our hotline or send an email. We typically respond within 24-48 hours during business days.</p>
+                <button class="quick-apply-btn">Quick Apply</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Images/ScholarX Logo.png" alt="ScholarX Logo" class="footer-logo-icon">
+                    <p>Empowering the Next Generation of Leaders</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="contact.html">Apply</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>Email: info@scholarx.org</li>
+                        <li>Phone: +27 (555) 123-4567</li>
+                        <li>Address: 123 Education Blvd, Campus City, CC 12345</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">FaceBook</a></li>
+                        <li><a href="#">Tik Tok</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ScholarX. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

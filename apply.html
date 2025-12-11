@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScholarX Bursary Application</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="Images/ScholarX Logo.png" alt="ScholarX Logo" class="logo-icon">
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="apply-btn"><a href="apply.html">Apply Now</a></button>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+          <h1>Apply for a <span class="gradient-text">Bursary</span></h1>
+          <p>Welcome to the ScholarX Bursary Application! Please complete all sections carefully. Fields marked with * are required</p>
+          <p>Steps: 1) Personal Info  2) Academic Details  3) Motivation & Documents  4) Preview & Submit </p>
+      </div>
+  </section>
+
+
+    <!-- Horizontal Progress Tracker -->
+    <div class="progress-container">
+      <div class="progress" id="progress"></div>
+      <div class="circle active">1</div>
+      <div class="circle">2</div>
+      <div class="circle">3</div>
+      <div class="circle">4</div>
+    </div>
+
+    <p class="step-labels">
+      <span>Personal Info</span>
+      <span>Academic Details</span>
+      <span>Essay</span>
+      <span>Documents</span>
+    </p>
+
+   
+    <form id="bursaryForm" class="form-card">
+        <!-- Step 1: Personal Info -->
+        <div class="form-step active">
+          <h2>Personal Information</h2>
+          <p class="form-desc">Tell us about yourself</p>
+  
+          <div class="form-grid">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" required />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" required />
+            </div>
+            <div class="form-group">
+              <label>Date of Birth *</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Country of Residence *</label>
+              <select required>
+                <option value="">Select your country</option>
+                <option>South Africa</option>
+                <option>Botswana</option>
+                <option>Namibia</option>
+                <option>Zimbabwe</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      <!-- Step 2 -->
+      <div class="form-step">
+        <h2>Academic Details</h2>
+        <div class="form-grid">
+          <div class="form-group"><label>Institution *</label><input type="text" required></div>
+          <div class="form-group"><label>Level *</label>
+            <select required>
+              <option value="">Select</option>
+              <option>Undergraduate</option>
+              <option>Postgraduate</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Field *</label><input type="text" required></div>
+          <div class="form-group"><label>GPA *</label><input type="text" required></div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="form-step">
+        <h2>Application Essay</h2>
+        <textarea rows="8" placeholder="Why do you deserve this bursary?" required></textarea>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="form-step">
+        <h2>Supporting Documents</h2>
+        <div class="form-group"><label>Upload Transcript *</label><input type="file" required></div>
+        <div class="form-group"><label>Upload ID *</label><input type="file" required></div>
+      </div>
+
+      <!-- Form Buttons -->
+      <div class="form-buttons">
+        <button type="button" class="prev-btn">Previous</button>
+        <button type="button" class="next-btn">Next</button>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <button class="quick-apply">Quick Apply</button>
+
+  <script src="apply_script.js"></script>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <div class="container">
+    <h3>Stay Updated</h3>
+    <p>Subscribe to receive the latest updates, scholarships, and news from ScholarX.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+ 
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <img src="Images/ScholarX Logo.png" alt="ScholarX Logo" class="footer-logo-icon">
+              <p>Empowering the Next Generation of Leaders</p>
+          </div>
+          <div class="footer-links">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#benefits">Benefits</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#applications">Apply</a></li>
+                  
+              </ul>
+          </div>
+          <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <ul>
+                  <li>Email: info@scholarx.org</li>
+                  <li>Phone: +27 (555) 123-4567</li>
+                  <li>Address: 123 Education Blvd, Campus City, CC 12345</li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-social">
+<h4>Follow Us</h4>
+<ul>
+  <li><a href="https://facebook.com/scholarx">Facebook</a></li>
+  <li><a href="https://tiktok.com/@scholarx">TikTok</a></li>
+  <li><a href="https://instagram.com/scholarx">Instagram</a></li>
+</ul>
+</div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2025 ScholarX. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
